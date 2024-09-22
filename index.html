@@ -43,7 +43,7 @@
             </div>
             <div class=" flex items-center space-x-2">
                 <img src="./assets/coin.png" alt="">
-                <p id="balance" class="text-xl font-medium text-balance-bg">10000 BDT</p>
+                <p id="balance" class="text-xl font-medium text-balance-bg"><span id="account-balance">15000000.00</span> BDT</p>
             </div>
             <div class="md:hidden">
                 <button class="bg-btn-primary text-xl font-semibold px-8 py-3 cursor-pointer rounded-lg hover:bg-slate-300 ">Blog</button>
@@ -55,14 +55,14 @@
 
     <main>
 
-        <div class="w-4/5 mx-auto flex justify-center space-x-6 mt-12 md:mt-28">
+        <div class="w-4/5 mx-auto flex justify-center space-x-6 mt-12 md:mt-24">
             <button class="bg-btn-primary px-8 py-4 text-xl font-semibold rounded-lg ">Donation</button>
-            <button class="border px-8 py-4 text-xl font-semibold rounded-lg ">History</button>
+            <button class="border px-8 py-4 text-xl font-semibold rounded-lg bg-slate-100 ">History</button>
         </div>
 
         <!-- donation section  -->
 
-        <section class="w-4/5 mx-auto mt-9 space-y-4">
+        <section class="w-4/5 mx-auto mt-9 space-y-4 mb-14 ">
             
             <!-- Donate for Flood at Noakhali, Bangladesh section start -->
 
@@ -71,10 +71,10 @@
                     <img class="w-full" src="./assets/noakhali.png" alt="">
                 </div>
                 <div class="space-y-4 flex flex-col justify-between ">
-                    <div class=" w-32 flex justify-center items-center space-x-1 bg-slate-100 rounded-xl px-4 py-3">
+                    <button class=" w-44 flex justify-center items-center space-x-1 bg-slate-100 rounded-xl px-4 py-3">
                         <img src="./assets/coin.png" alt="">
-                        <p class="text-balance-bg"> <span>0</span> BDT </p>
-                    </div>
+                        <p class="text-balance-bg"> <span id="balance-01">3500</span> BDT </p>
+                    </button>
                     <p class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</p>
                     <p class="font-light text-balance-bg">The floods that recently struck Noakhali have severely impacted homes and vital infrastructure. Your donation will provide much-needed supplies to the disaster victims. No matter the size, every donation counts. Please stand with us in aiding the relief efforts and making a meaningful difference in the lives of those in distress.</p>
                     <input type="number" id="donation-noakhali"
@@ -140,13 +140,25 @@
             
             </div>
 
-
-             <!-- Aid for Injured in the Quota Movement section start end  -->
-
-
-
+             <!-- Aid for Injured in the Quota Movement section  end  -->
 
         </section>
+
+        <!-- donation section End -->
+
+        <!-- History-section strat -->
+
+        <section class=" hidden w-4/5 mx-auto bg-slate-200  p-6 mt-7 mb-14">
+            <div id="history-list" class="grid grid-cols-1 gap-3">
+
+            </div>
+        </section>
+
+
+
+
+
+
 
 
 
@@ -154,6 +166,8 @@
 
 
 
-
+<script src="./js/utilities.js"></script>
+<script src="./js/features.js"></script>
+<script src="./js/donate.js"></script>
 </body>
 </html>
