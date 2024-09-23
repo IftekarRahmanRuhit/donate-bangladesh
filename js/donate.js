@@ -1,7 +1,7 @@
 
 document.getElementById('donate-btn-1').addEventListener('click',function(){
 
-    if(getInputFieldById('donation-noakhali') < 0 || isNaN(getInputFieldById('donation-noakhali')) ){
+    if(getInputFieldById('donation-noakhali') < 0 || isNaN(getInputFieldById('donation-noakhali')) || getInputFieldById('donation-noakhali') === 0 ){
         document.getElementById('amount-error-1').classList.remove('hidden')
     }
     else{
@@ -18,7 +18,7 @@ document.getElementById('donate-btn-1').addEventListener('click',function(){
 
 document.getElementById('donate-btn-2').addEventListener('click',function(){
 
-    if(getInputFieldById('donation-feni') < 0 || isNaN(getInputFieldById('donation-feni')) ){
+    if(getInputFieldById('donation-feni') < 0 || isNaN(getInputFieldById('donation-feni')) || getInputFieldById('donation-feni') === 0 ){
         document.getElementById('amount-error-2').classList.remove('hidden');
     }
     else{
@@ -36,7 +36,7 @@ document.getElementById('donate-btn-2').addEventListener('click',function(){
 
 document.getElementById('donate-btn-3').addEventListener('click',function(){
 
-    if(getInputFieldById('donation-aid') < 0 || isNaN(getInputFieldById('donation-aid')) ){
+    if(getInputFieldById('donation-aid') < 0 || isNaN(getInputFieldById('donation-aid')) || getInputFieldById('donation-aid') === 0 ){
         document.getElementById('amount-error-3').classList.remove('hidden');
     }
     else{

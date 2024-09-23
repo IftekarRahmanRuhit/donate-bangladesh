@@ -43,9 +43,9 @@ function addHistoryNoakhali(){
     div.classList.add('bg-white','p-3','border','rounded-xl')
     div.innerHTML = `
     <p class=" font-semibold">${ getInputFieldById('donation-noakhali')} Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
-    <p class ="text-gray-500 mt-1">Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} (Bangladesh Standard Time)</p>
+    <p class ="text-gray-500 mt-1">Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} GMT +0600 (Bangladesh Standard Time)</p>
     `
-    document.getElementById('history').prepend(div);
+    document.getElementById('history-list').prepend(div);
 }
 
 function addHistoryFeni(){
@@ -53,9 +53,9 @@ function addHistoryFeni(){
     div.classList.add('bg-white','p-3','border','rounded-xl')
     div.innerHTML = `
     <p class=" font-semibold">${ getInputFieldById('donation-feni')} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
-    <p class ="text-gray-500 mt-1">Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} (Bangladesh Standard Time)</p>
+    <p class ="text-gray-500 mt-1">Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} GMT +0600 (Bangladesh Standard Time)</p>
     `
-    document.getElementById('history').prepend(div);
+    document.getElementById('history-list').prepend(div);
 }
 
 function addHistoryQuotaMovement(){
@@ -63,8 +63,8 @@ function addHistoryQuotaMovement(){
     div.classList.add('bg-white','p-3','border','rounded-xl')
     div.innerHTML = `
     <p class=" font-semibold">${ getInputFieldById('donation-aid')} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
-    <p class ="text-gray-500 mt-1">Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} (Bangladesh Standard Time)</p>
+    <p class ="text-gray-500 mt-1">Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} GMT +0600 (Bangladesh Standard Time)</p>
     `
-    document.getElementById('history').prepend(div);
+    document.getElementById('history-list').prepend(div);
 }
 
