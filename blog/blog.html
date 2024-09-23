@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-lexend {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "btn-primary": "#B4F461",
+              "header-bg": "#F9F7F3",
+              "balance-bg": "#111111B3",
+            },
+          },
+        },
+      };
+    </script>
     <title>Blog</title>
-</head>
-<body>
+  </head>
+<body class="font-lexend">
     
+    <header class="w-full mx-auto bg-header-bg p-6  ">
+        <nav
+          class="flex justify-center flex-col space-y-3 md:flex justify-between items-center md:flex-row  space-y-0 w-4/5 mx-auto "
+        >
+          <div class="hidden md:flex">
+            <button
+              class="bg-btn-primary text-xl font-semibold px-8 py-3 cursor-pointer rounded-lg hover:bg-slate-300"
+            ><a href="../index.html">Home</a>
+            
+            </button>
+          </div>
+          <div class="flex justify-center items-center space-x-3">
+            <img src="../assets/logo.png" alt="" />
+            <p class="text-2xl md:text-3xl font-semibold">Donate Bangladesh</p>
+          </div>
+          <div class="flex items-center space-x-2">
+            <img src="../assets/coin.png" alt="" />
+            <p id="balance" class="text-xl font-medium text-balance-bg">
+              <span id="account-balance">250000.00</span> BDT
+            </p>
+          </div>
+          <div class="md:hidden">
+            <button
+              class="bg-btn-primary text-xl font-semibold px-8 py-3 cursor-pointer rounded-lg hover:bg-slate-300"
+            >
+              Blog
+            </button>
+          </div>
+        </nav>
+  
+
+      </header>
+
+
 </body>
 </html>
