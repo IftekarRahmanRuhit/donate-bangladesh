@@ -1,7 +1,7 @@
 
 document.getElementById('donate-btn-1').addEventListener('click',function(){
 
-    if(getInputFieldById('donation-noakhali') <= 0 || isNaN(getInputFieldById('donation-noakhali'))){
+    if(getInputFieldById('donation-noakhali') <= 0 || isNaN(getInputFieldById('donation-noakhali')) || getInputTextById('account-balance') <= getInputFieldById('donation-noakhali') ){
         document.getElementById('amount-error-1').classList.remove('hidden');
         alert('Invalid amount! Please enter a positive amount');
     }
@@ -20,7 +20,7 @@ document.getElementById('donate-btn-1').addEventListener('click',function(){
 
 document.getElementById('donate-btn-2').addEventListener('click',function(){
 
-    if(getInputFieldById('donation-feni') <= 0 || isNaN(getInputFieldById('donation-feni'))){
+    if(getInputFieldById('donation-feni') <= 0 || isNaN(getInputFieldById('donation-feni'))|| getInputTextById('account-balance') <= getInputFieldById('donation-feni') ){
         document.getElementById('amount-error-2').classList.remove('hidden');
         alert('Invalid amount! Please enter a positive amount');
     }
@@ -39,7 +39,7 @@ document.getElementById('donate-btn-2').addEventListener('click',function(){
 
 document.getElementById('donate-btn-3').addEventListener('click',function(){
 
-    if(getInputFieldById('donation-aid') <= 0 || isNaN(getInputFieldById('donation-aid'))){
+    if(getInputFieldById('donation-aid') <= 0 || isNaN(getInputFieldById('donation-aid'))|| getInputTextById('account-balance') <= getInputFieldById('donation-aid')){
         document.getElementById('amount-error-3').classList.remove('hidden');
         alert('Invalid amount! Please enter a positive amount');
     }
