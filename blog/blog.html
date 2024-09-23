@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-theme= "light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -63,14 +64,86 @@
             <button
               class="bg-btn-primary text-xl font-semibold px-8 py-3 cursor-pointer rounded-lg hover:bg-slate-300"
             >
-              Blog
+            <a href="../index.html">Home</a>
             </button>
           </div>
         </nav>
   
-
       </header>
 
+      <main class="w-4/5 mx-auto">
+
+        <div class="mt-20 mb-20">
+            <p class="text-4xl font-semibold mb-6">Important FAQ ?</p>
+        
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border my">
+                <div class="collapse-title text-xl font-medium"> What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <div>
+                        <p>The HTML DOM is a standard object model and programming interface for HTML. It defines:</p>
+                        <ul>
+                        <li>- The HTML elements as objects.</li>
+                        <li>- The properties of all HTML elements.</li>
+                        <li>- The methods to access all HTML elements.</li>
+                        <li>- The events for all HTML elements.</li>
+                    </ul>
+                    <p>In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</p>
+                  
+                </div>
+              </div>
+
+              <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p>
+                  <ul>
+                  <li>- By ID: Select an element using its unique ID</li>
+                  <li>- By class: Select multiple elements with the same class name.</li>
+                  <li>- By tag name: Select all elements of a specific type.</li>
+                  <li>- By query selector: Use CSS selectors to select elements based on various criteria, such as ID, class, tag name, attributes, and more</li>
+                </ul>
+              </p>
+                </div>
+              </div>
+
+              <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>
+                    <ul>
+                      <li>- Improved performance: When dealing with a large number of child elements, event delegation can significantly improve performance, as it avoids creating and managing multiple event listeners.</li>
+                      <li>- Dynamic content: If the number of child elements changes dynamically (e.g., through JavaScript or AJAX), event delegation ensures that new elements will automatically inherit the event listener from their parent. </li>
+                      <li>- Simplified code: Event delegation can lead to cleaner and more concise code, as you only need to manage a single event listener for a group of related elements.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+
+              <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p>
+                    <ul>
+                    <li>
+                      - Get an attribute using a method that retrieves it by name.
+                    </li>
+                    <li>
+                      - Set an attribute by specifying the attribute name and value.
+                    </li>
+                    <li>
+                      -  Remove an attribute using a method that takes the attribute
+                      name as a parameter.
+                    </li>
+                  </ul>
+                  </p>
+                </div>
+              </div>
+        </div>
+      </main>
+      
+      <footer id="footer" class="bg-header-bg w-full h-40">
+
+      </footer>
 
 </body>
 </html>
